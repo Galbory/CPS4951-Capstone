@@ -24,7 +24,8 @@ Overall, this project aims to explore the performance, efficiency, and reliabili
 ├── code.ipynb                # Main notebook for experiments 
 ├── environment.yml           # Conda environment definition
 ├── requirements.txt          # pip dependency list
-└── README.md                 # Project documentation 
+└── README.md                 # Project documentation
+ 
 ## ⚙️ Environment Setup
 
 There are two ways to set up the environment for this project:  
