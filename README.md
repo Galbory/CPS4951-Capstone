@@ -58,10 +58,40 @@ conda activate imdb-sentiment
 unzip "IMDB Dataset.zip" -d data/
 
 # Unzip BERT base model snapshot
-unzip "bert-base-uncased.zip" -d bert_base_uncased/
+unzip "bert-base-uncased.zip"
 ```
+## 🚀 Running the Project
 
-Ensure the folder `bert_base_uncased/` contains:
-`config.json`, `pytorch_model.bin`, `vocab.txt`
+After setting up the environment and unzipping the dataset and model files,  
+you can run all experiments directly from the Jupyter Notebook.
 
-
+### 🔹 Step 1 — Launch Jupyter Notebook
+```bash
+jupyter notebook
+```
+### 🔹 Step 2 — Open the Notebook
+```bash
+# Open the file:
+code.ipynb
+```
+### 🔹 Step 3 — Run All Cells
+Run all cells in sequence.
+The notebook will automatically:
+  load and preprocess the IMDb dataset,
+  train and evaluate five models (LDA+LR, BiLSTM, BERT, LDA-BERT, BERT-BiLSTM),
+  repeat experiments across five random seeds [42, 77, 4096, 9898, 2025],
+  compute metrics including Accuracy, Macro-F1, AUC, and Running Time,
+  perform paired t-tests and error analysis,
+  generate confusion matrices and ROC curves
+### 🔹 Step 4 — Check the Outputs
+All results are automatically saved under the results/ directory:
+```bash
+results/
+├──<model>seed<>
+├── preds/          # per-seed prediction files
+├── figs/           # ROC & confusion matrix plots
+├── tables/         # summary tables (mean/std, t-tests)
+├── final_preds/    # aggregated results
+└── error_samples/  # misclassified samples for analysis
+```
+## 📊 Example Outputs
