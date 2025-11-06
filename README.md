@@ -25,28 +25,28 @@ Overall, this project aims to explore the performance, efficiency, and reliabili
 ├── environment.yml           # Conda environment definition
 ├── requirements.txt          # pip dependency list
 └── README.md                 # Project documentation 
-
+```
 
 ## ⚙️ Environment Setup
-
+```bash
 There are two ways to set up the environment for this project:  
 1. Using **pip** with `requirements.txt`
 2. Using **Conda** with the provided `environment.yml`
 
 It is recommended to install dependencies using **pip** for simplicity and speed.  
 If any environment conflicts occur (e.g., CUDA or PyTorch version issues), you may alternatively use **Conda**.
----
+```
 ### 🔹 Option A — Using pip (Recommended)
 
 ```bash
 # Install all dependencies
 pip install -r requirements.txt
-
+```
 
 ### 🔹 Option B — Using Conda
 # Create a new environment
 conda env create -f environment.yml
 # Activate the environment
 conda activate imdb-sentiment
-
+```
 
