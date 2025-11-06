@@ -87,7 +87,8 @@ The notebook will automatically:
 All results are automatically saved under the results/ directory:
 ```bash
 results/
-├──<model>seed<>
+├──<model><seeds>_learn.csv
+├──<model>_run.csv
 ├── preds/          # per-seed prediction files
 ├── figs/           # ROC & confusion matrix plots
 ├── tables/         # summary tables (mean/std, t-tests)
@@ -95,3 +96,19 @@ results/
 └── error_samples/  # misclassified samples for analysis
 ```
 ## 📊 Example Outputs
+### 🔹 Step 1 — Check the base lib
+Prepore for load data
+### 🔹 Step 2 — load data and split
+50000->35000/7500/7500
+### 🔹 Step 3 — Clean data and save split dataset
+
+
+
+
+
+
+
+
+
+
+
