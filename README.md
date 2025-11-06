@@ -7,7 +7,7 @@ This repository implements sentiment classification on the IMDb dataset and comp
 - **BiLSTM**
 - **BERT**
 - **LDA-BERT**
-- **BERT-BiLSTM**
+- **BERT-BiLSTM**<br>
 Each model is trained and evaluated across multiple fixed random seeds to ensure experimental reproducibility.
 After training, the framework automatically computes and records several key performance metrics, including Accuracy, Macro-F1, AUC, and Running Time.
 To assess statistical significance, paired t-tests are conducted between models.
