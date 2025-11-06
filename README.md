@@ -28,25 +28,40 @@ Overall, this project aims to explore the performance, efficiency, and reliabili
 ```
 
 ## ⚙️ Environment Setup
-```bash
-There are two ways to set up the environment for this project:  
+
+There are two ways to set up the environment for this project:
+
 1. Using **pip** with `requirements.txt`
 2. Using **Conda** with the provided `environment.yml`
 
-It is recommended to install dependencies using **pip** for simplicity and speed.  
+It is recommended to install dependencies using **pip** for simplicity and speed.
 If any environment conflicts occur (e.g., CUDA or PyTorch version issues), you may alternatively use **Conda**.
-```
-### 🔹 Option A — Using pip (Recommended)
 
+### 🔹 Option A — Using pip
 ```bash
 # Install all dependencies
 pip install -r requirements.txt
 ```
 
 ### 🔹 Option B — Using Conda
+```bash
 # Create a new environment
 conda env create -f environment.yml
 # Activate the environment
 conda activate imdb-sentiment
 ```
+
+### 🔸 Prepare Offline Files
+
+```bash
+# Unzip IMDb dataset
+unzip "IMDB Dataset.zip" -d data/
+
+# Unzip BERT base model snapshot
+unzip "bert-base-uncased.zip" -d bert_base_uncased/
+```
+
+Ensure the folder `bert_base_uncased/` contains:
+`config.json`, `pytorch_model.bin`, `vocab.txt`
+
 
